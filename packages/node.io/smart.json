@@ -1,0 +1,8 @@
+{
+  "name": "node.io",
+  "description": "A distributed data scraping and processing framework",
+  "homepage": "https://github.com/maximilianmikus/meteor-node.io",
+  "author": "Maximilian Mikus  (https://github.com/maximilianmikus)",
+  "version": "0.1.0",
+  "git": "https://github.com/maximilianmikus/meteor-node.io.git"
+}
