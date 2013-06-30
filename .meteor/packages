@@ -6,7 +6,8 @@
 autopublish
 insecure
 preserve-inputs
-jquery
 underscore
 bootstrap
 backbone
+jquery
+less

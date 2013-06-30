@@ -7,6 +7,18 @@ Template.data.data = function () {
   return Data.find({});
 };
 
+Template.data.rendered = function () {
+  
+}
+
+Meteor.startup(function () {
+  console.log("startup");
+  $('.thumbnails').masonry({
+    columnWidth: 360,
+    itemSelector: '.span4'
+  });
+})
+
 /*
 Template.hello.events({
   'click input' : function () {

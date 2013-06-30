@@ -3,14 +3,25 @@
 </head>
 
 <body>
+  {{> header}}
   {{> data}}
 </body>
 
 <template name="data">
-  {{#each data}}
-  <div>
-    <p>{{price}}</p>
-    <img src="{{image}}">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        <ul class="thumbnails">
+          {{#each data}}
+          <li class="span4">
+            <div class="thumbnail">
+              <img src="{{image}}" alt="">
+              <h3>{{price}}</h3>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
-  {{/each}}
 </template>
