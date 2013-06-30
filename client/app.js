@@ -3,10 +3,11 @@
 //   dataHandle = Meteor.subscribe('data');
 // });
 
-Template.hello.greeting = function () {
-  return Session.get('current_results');
+Template.data.data = function () {
+  return Data.find({});
 };
 
+/*
 Template.hello.events({
   'click input' : function () {
     Meteor.apply('nodeioScrape', ['http://www.immobilien.net/Eigentumswohnungen/Wien/Seite1/treffer.aspx?iskauf=1&kaufpreisbis=100000', '.results > a'], function (err, res) {
@@ -14,4 +15,4 @@ Template.hello.events({
     });
   }
 });
-
+*/

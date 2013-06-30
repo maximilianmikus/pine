@@ -3,11 +3,14 @@
 </head>
 
 <body>
-  {{> hello}}
+  {{> data}}
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="data">
+  {{#each data}}
+  <div>
+    <p>{{price}}</p>
+    <img src="{{image}}">
+  </div>
+  {{/each}}
 </template>
